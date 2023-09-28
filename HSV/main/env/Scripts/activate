@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\royka\OneDrive\Desktop\HSV\HSV\main\env"
+VIRTUAL_ENV="C:\Users\tiffany.tirop\Desktop\HSV\HSV\main\env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

@@ -183,6 +183,9 @@
               <div class="swiper-wrapper">
                 <div class="carousel-item-b swiper-slide">
                   <img src="{% static 'img/landy5.jpg' %}" alt="">
+                  {% for image in images %}
+                    <img src="{{ image.image.url }}" alt="">
+                  {% endfor %}
                 </div>
                 <div class="carousel-item-b swiper-slide">
                   <img src="{% static 'img/land2.jpg' %}" alt="">
@@ -405,6 +408,7 @@
         </div>
       </div>
     </section><!-- End Property Single-->
+    
 
   </main><!-- End #main -->
   {% endblock content %}

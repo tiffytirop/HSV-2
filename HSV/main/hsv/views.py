@@ -25,7 +25,7 @@ def contact(request):
         Email:\n\t\t{}\n
         Subject:\n\t\t{}\n
         Message:\n\t\t{}\
-        '''.format(form_data['name'], form_data['message'], form_data['email'],form_data['subject'])
+        '''.format(form_data['name'], form_data['email'], form_data['subject'],form_data['message'])
         
         send_mail('New Message', message, '',['<roykatiwa@gmail.com>'] ) 
         
@@ -39,7 +39,3 @@ def signin(request):
 
 def services(request):
     return render(request, 'services.html')
-
-
-
-
